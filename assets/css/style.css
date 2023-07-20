@@ -45,7 +45,7 @@ h1 {
     background-color: #f4bc4f;
     width: 50%;
     height: 50%;
-    margin: 0% 30% 20% 20%;
+    margin: 0% 20% 5% 25%;
     padding: 5%;
 }
 
@@ -77,4 +77,26 @@ ul {
 ul li {
     padding-top: 2%;
     font-weight: bolder;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.game-btn {
+    background: #f4bc4f;
+    border-radius: 10px;
+    padding: 1% 2%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    font-family: Yeseva One, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.game-btn:hover {
+    background-color: white;
+    border: 1px solid #f4bc4f;
 }
