@@ -47,6 +47,7 @@ h1 {
     height: 50%;
     margin: 0% 20% 5% 25%;
     padding: 5%;
+    border-radius: 10px;
 }
 
 h2,
@@ -79,6 +80,9 @@ ul li {
     font-weight: bolder;
 }
 
+
+/* go to game button*/
+
 .container-btn {
     display: flex;
     justify-content: center;
@@ -99,4 +103,57 @@ ul li {
 .game-btn:hover {
     background-color: white;
     border: 1px solid #f4bc4f;
+}
+
+/* **** Game Board page **** */
+
+/* style time and moves count section*/
+
+.time-moves-count {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0% 30% 2% 0%;
+    font-family: Yeseva One, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    list-style: none;
+}
+
+/* style for board game */
+
+.board-game-container {
+    background-color: #f4bc4f;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    place-items: center;
+    grid-gap: 1%;
+    width: 30%;
+    height: 650px;
+    margin: 10% 30%;
+    border-radius: 10px;
+}
+
+.flip-cards {
+    display: grid;
+    width: 90%;
+    height: 75%;
+    border: 2px solid #272323;
+    margin: 3% 20% 3% 20%;
+    padding: 0%;
+}
+
+.front-card,
+.back-card img {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+img {
+    object-fit: fill;
 }

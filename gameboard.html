@@ -14,19 +14,17 @@
 
 <body>
     <!--heading section-->
-    <h1>
+    <div class="heading">
         <img src="assets/images/image_logo.png" alt="logo" class="img-logo">
-        German-Flip: Memory Card Game with German Vocabulary
-    </h1>
+        <h1>German-Flip: Memory Card Game with German Vocabulary</h1>
+    </div>
 
+    <ul class="time-moves-count">
+        <li>Time 03:00</li>
+        <li> Moves count: 40</li>
+    </ul>
     <!--game board section-->
     <div class="board-game-container">
-        <ul>
-            <li>Timer 03:00</li>
-            <li> Moves count: 40</li>
-        </ul>
-
-        <!--cards section-->
         <div class="flip-cards">
             <div class="front-card"></div>
             <div class="back-card"><img src="assets/images/das_brot.PNG" alt="Bread image"></div>
@@ -92,13 +90,12 @@
             <div class="front-card"></div>
             <div class="back-card"><img src="assets/images/die_marmelade.PNG" alt="Marmelade image"></div>
         </div>
-
-        <!--reset button and go to game rules button-->
-        <button>Reset Game</button>
-        <a href="index.html" class="container-btn">
-            <button class="game-btn">Go to Game Rules</button>
-        </a>
     </div>
+    <!--reset button and go to game rules button-->
+    <button>Reset Game</button>
+    <a href="index.html" class="container-btn">
+        <button class="game-btn">Go to Game Rules</button>
+    </a>
     <script src="assets/js/script.js"></script>
 </body>
 
