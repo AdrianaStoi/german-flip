@@ -11,7 +11,7 @@ body {
     background: #678CEC;
     font-family: Josefin Sans, sans-serif;
     font-weight: bold;
-    font-size: large;
+    font-size: 130%;
     color: #272323;
 }
 
@@ -21,7 +21,7 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 1%;
-    margin: 10% 10%;
+    margin: 10% 5% 5% 5%;
 }
 
 .img-logo {
@@ -36,4 +36,45 @@ h1 {
     align-items: center;
     font-family: Yeseva One, sans-serif;
     font-size: 200%;
+}
+
+/* game rules section */
+.container-game-rules {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4bc4f;
+    width: 50%;
+    height: 50%;
+    margin: 0% 30% 20% 20%;
+    padding: 5%;
+}
+
+h2,
+h3,
+.p-game-rules {
+    display: flex;
+    align-items: flex-start;
+    font-family: Yeseva One, sans-serif;
+    margin: 2% 2% 2% 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+
+p {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0%;
+    margin-right: 5%;
+}
+
+ul {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+ul li {
+    padding-top: 2%;
+    font-weight: bolder;
 }
