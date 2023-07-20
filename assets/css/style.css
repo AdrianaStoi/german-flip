@@ -157,3 +157,43 @@ ul li {
 img {
     object-fit: fill;
 }
+
+/* reset button and go to game rules button */
+
+.container-rst-btn {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.reset-btn,
+.game-rules-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 1% 2%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    background: #f4bc4f;
+    border-radius: 10px;
+    font-family: Yeseva One, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.reset-btn:hover,
+.game-rules-btn:hover {
+    background-color: white;
+    border: 1px solid #f4bc4f;
+}
+
+a {
+    text-decoration: none;
+}
+
+.game-rules-btn {
+    padding: 6% 15%;
+}
