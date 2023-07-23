@@ -26,8 +26,8 @@ body {
 }
 
 .img-logo {
-    width: 20%;
-    height: 20%;
+    width: 15%;
+    height: 15%;
     margin: 0%;
     border-radius: 50%;
 }
@@ -36,7 +36,7 @@ h1 {
     display: flex;
     align-items: center;
     font-family: Yeseva One, sans-serif;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 /* game rules section */
@@ -45,7 +45,7 @@ h1 {
     flex-direction: column;
     background-color: #f4bc4f;
     width: 50%;
-    height: 50%;
+    height: 30%;
     margin: 0% 20% 5% 25%;
     padding: 5%;
     border-radius: 10px;
