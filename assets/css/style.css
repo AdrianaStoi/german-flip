@@ -26,7 +26,7 @@ body {
 }
 
 .img-logo {
-    width: 15%;
+    width: 20%;
     height: 15%;
     margin: 0%;
     border-radius: 50%;
@@ -279,7 +279,7 @@ a {
     }
 
     .img-logo {
-        width: 25%;
+        width: 40%;
     }
 
     h1 {
@@ -316,6 +316,29 @@ a {
 
     .board-game-container {
         margin: 0% 0% 10% 25%;
+    }
+}
+
+/* **** Media queries for iPad Air 820px **** */
+@media screen and (max-width: 820px) {
+
+
+    .img-logo {
+        width: 60%;
+    }
+
+    .container-game-rules {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container-btn {
+        margin-top: 3%;
+    }
+
+    /* Game Board page */
+    .time-moves-count {
+        margin: 0% 25% 2% 0%;
     }
 
 }
