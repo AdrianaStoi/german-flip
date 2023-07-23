@@ -129,61 +129,88 @@ ul li {
 /* style for board game */
 
 .board-game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1%;
+    justify-content: center;
+    perspective: 1000px;
+    width: 50%;
+    margin: 2% 0% 5% 25%;
+}
+
+.flip-cards {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: scale(1);
+    transition: transform .6s;
+    border: 3px solid #f4bc4f;
+}
+
+
+/*.board-game-container {
     background-color: #f4bc4f;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*display: grid;
-    grid-template-columns: repeat(4, 22%);
+
     place-items: center;
-    justify-content: center;*/
+    justify-content: center;
     gap: 1%;
     width: 30%;
     height: 40%;
     margin: 2% 30% 2% 30%;
     border-radius: 10px;
-}
+} */
 
-.cards-container {
-    display: flex;
+/*.cards-container {
+    /*display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);*/
+/* display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
     height: 100%;
     margin: 2%;
     perspective: 1000px;
-}
+    position: relative;
+}*/
 
-.flip-cards {
+/*.flip-cards {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
     /*display: flex;
     margin: 2%;
     width: 25%;
-    height: 25%;*/
+    height: 25%;
     /*display: flex;
     justify-content: center;
     align-items: center;*/
-    border: 2px solid #272323;
+
+/*  border: 2px solid #272323;
     border-radius: 10px;
     position: relative;
     transform-style: preserve-3d;
     transform: scale(1);
     transition: transform .6s;
-}
-
+}*/
 
 .back-card,
 .front-card {
-    /*display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center;*/
+    justify-content: center;
     width: 100%;
     height: 100%;
     padding: 0%;
-    position: relative;
+    margin: 0%;
+    position: absolute;
     backface-visibility: hidden;
+    overflow: hidden;
 }
 
 .flip-cards:hover {
@@ -199,11 +226,10 @@ img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
     overflow: hidden;
 }
 
-/* reset button and go to game rules button */
+/* reset button and go to game rules button 
 
 .container-rst-btn {
     display: flex;
@@ -219,7 +245,7 @@ img {
     justify-content: center;
     align-items: center;
     /*flex-direction: row;*/
-    padding: 1% 2%;
+/*    padding: 1% 2%;
     margin-top: 0%;
     margin-bottom: 5%;
     background: #f4bc4f;
@@ -241,4 +267,4 @@ a {
 
 .game-rules-btn {
     padding: 9% 50%;
-}
+}*/
