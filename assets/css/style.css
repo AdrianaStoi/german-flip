@@ -431,3 +431,46 @@ a {
         height: 80px;
     }
 }
+
+/* **** Media queries for Galaxy Fold 280px **** */
+
+@media screen and (max-width: 280px) {
+
+    .img-logo {
+        width: 150%;
+    }
+
+    h1 {
+        font-size: 70%;
+    }
+
+    /* Game rules section */
+    .container-game-rules {
+        width: 100%;
+    }
+
+    h2,
+    h3,
+    .p-game-rules {
+        font-size: 70%;
+        margin-bottom: 3%;
+    }
+
+    p,
+    ul,
+    .time-moves-count {
+        font-size: 65%;
+    }
+
+    .game-btn {
+        font-size: small;
+        padding: 3% 4%;
+    }
+
+    /* Game Board page */
+
+    .flip-cards {
+        width: 65px;
+        height: 70px;
+    }
+}
