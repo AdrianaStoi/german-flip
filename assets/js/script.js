@@ -5,9 +5,12 @@ let frstCard, scndCard; // variables for checking card match
 let flippedCard = false;
 let stickBoard = false;
 
+
 // Function and click event for creating flip card 
 function createFlip() {
     if (stickBoard) return;
+    if (this === frstCard) return;
+
     this.classList.add('flipping');
 
     if (!flippedCard) {
@@ -17,7 +20,7 @@ function createFlip() {
     }
 
     scndCard = this;
-    flippedCard = false;
+    //flippedCard = false;
     matchCheck();
 }
 
@@ -36,6 +39,7 @@ function matchCheck() {
 function activateMatch() {
     frstCard.removeEventListener('click', createFlip);
     scndCard.removeEventListener('click', createFlip);
+    rebootBoard();
 }
 
 function revertCards() {
@@ -44,10 +48,16 @@ function revertCards() {
     setTimeout(() => {
         frstCard.classList.remove('flipping');
         scndCard.classList.remove('flipping');
-        stickBoard = false;
+        //stickBoard = false;
+        rebootBoard();
     }, 900);
 }
 
+//reset cards after each round
+function rebootBoard() {
+    [flippedCard, stickBoard] = [false, false];
+    [frstCard, scndCard] = [null, null];
+}
 
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 
