@@ -1,8 +1,7 @@
 
-
 let flipCards = document.querySelectorAll('.flip-cards');
-// variables for checking card match
-let frstCard, scndCard;
+
+let frstCard, scndCard; // variables for checking card match
 let flippedCard = false;
 let stickBoard = false;
 
@@ -22,7 +21,9 @@ function createFlip() {
     matchCheck();
 }
 
-function matchCheck(); {
+// function that checks match card 
+
+function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
 
     if (whenMatch) {
@@ -32,14 +33,25 @@ function matchCheck(); {
     }
 }
 
+function activateMatch() {
+    frstCard.removeEventListener('click', createFlip);
+    scndCard.removeEventListener('click', createFlip);
+}
 
+function revertCards() {
+    stickBoard = true;
 
+    setTimeout(() => {
+        frstCard.classList.remove('flipping');
+        scndCard.classList.remove('flipping');
+        stickBoard = false;
+    }, 900);
+}
 
 
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 
 
-//Function check match 
 
 
 
