@@ -163,7 +163,7 @@ ul li {
     overflow: hidden;
 }
 
-.flip-cards:hover {
+.flip-cards.flipping {
     transform: rotateY(180deg);
 }
 
