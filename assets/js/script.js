@@ -9,8 +9,11 @@ let timer = document.getElementById('time');
 let seconds = 0;
 let minutes = 0;
 let initiateTimer = null;
+let startTimer;
 
-//shuffle cards on window load
+
+
+//Shuffle cards on window load
 function shuffle() {
     flipCards.forEach(flipCards => {
         let randmPosition = Math.floor(Math.random() * 16);
@@ -23,8 +26,9 @@ window.onload = function () {
     shuffle();
 };
 
+// Start timer function
 function startTime() {
-    let startTimer = setInterval(function () {
+    startTimer = setInterval(function () {
         seconds++;
         if (seconds >= 60) {
             minutes++;
@@ -41,6 +45,7 @@ function stopTimer() {
 // Function and click event for creating flip card 
 function createFlip() {
 
+    //start timer on first card click
     if (initiateTimer === null) {
         startTime();
         initiateTimer = true;
@@ -87,13 +92,24 @@ function revertCards() {
         //stickBoard = false;
         rebootBoard();
     }, 900);
+
+    movesCount();
 }
 
-//reset frstcard and scndCard variables after each round
+//Reset frstcard and scndCard variables after each round
 function rebootBoard() {
     [flippedCard, stickBoard] = [false, false];
     [frstCard, scndCard] = [null, null];
 }
+
+//Increase moves count 
+function movesCount() {
+    let moveCount = document.getElementById("moves");
+    let moves = parseInt(moveCount.innerText);
+    moves++;
+    moveCount.innerText = moves;
+}
+
 
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 //flipCards.forEach(tile => tile.addEventListener('click', startTime));
