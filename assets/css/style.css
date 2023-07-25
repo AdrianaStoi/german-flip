@@ -221,7 +221,7 @@ a {
 
 /* winning message popup window - hidden until game is over*/
 #winPopContainer {
-    /*display: none;*/
+    display: none;
     background-color: #f4bc4f;
     width: 30%;
     height: 40%;

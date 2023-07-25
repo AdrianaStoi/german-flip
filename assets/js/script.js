@@ -11,6 +11,11 @@ let minutes = 0;
 let initiateTimer = null;
 let startTimer;
 
+let moveCount = document.getElementById("moves");
+let popupContainer = document.getElementById("winPopContainer");
+let popUp = document.getElementById("winPopup");
+let winTxt = document.getElementById("winText");
+let correctMatch = 0;
 
 //Shuffle cards on window load
 function shuffle() {
@@ -35,7 +40,6 @@ function startTime() {
         }
     }, 1000);
 }
-
 
 function stopTimer() {
     clearInterval(startTimer);
@@ -68,11 +72,15 @@ function createFlip() {
 // function that checks match card 
 function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
-
     if (whenMatch) {
         activateMatch();
-    } else {
+        correctMatch += 1;
+    }
+    else {
         revertCards();
+    }
+    if (correctMatch === 8) {
+        wnGame();
     }
 }
 
@@ -90,7 +98,6 @@ function revertCards() {
         //stickBoard = false;
         rebootBoard();
     }, 900);
-
     movesCount();
 }
 
@@ -102,12 +109,21 @@ function rebootBoard() {
 
 //Increase moves count 
 function movesCount() {
-    let moveCount = document.getElementById("moves");
     let moves = parseInt(moveCount.innerText);
     moves++;
     moveCount.innerText = moves;
 }
 
+//function win game and show win message
+function wnGame() {
+    if (correctMatch === 8) {
+        stopTimer();
+        popupContainer.style.display = "block";
+        popUp.style.display = "block";
+        winTxt.innerHTML = "You won with" + moveCount + "moves" + "in" + timer + "!";
+    };
+}
+//Event flip card on click
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 //flipCards.forEach(tile => tile.addEventListener('click', startTime));
 
