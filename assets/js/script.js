@@ -5,6 +5,20 @@ let frstCard, scndCard; // variables for checking card match
 let flippedCard = false;
 let stickBoard = false;
 
+//shuffle cards on window load
+
+function shuffle() {
+    flipCards.forEach(flipCards => {
+        let randmPosition = Math.floor(Math.random() * 16);
+        flipCards.style.order = randmPosition;
+    });
+
+}
+
+window.onload = function () {
+    shuffle();
+};
+
 
 // Function and click event for creating flip card 
 function createFlip() {
@@ -25,7 +39,6 @@ function createFlip() {
 }
 
 // function that checks match card 
-
 function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
 
@@ -53,11 +66,12 @@ function revertCards() {
     }, 900);
 }
 
-//reset cards after each round
+//reset frstcard and scndCard variables after each round
 function rebootBoard() {
     [flippedCard, stickBoard] = [false, false];
     [frstCard, scndCard] = [null, null];
 }
+
 
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 
