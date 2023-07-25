@@ -226,9 +226,9 @@ a {
     width: 30%;
     height: 40%;
     position: relative;
-    z-index: 30;
+    z-index: 10;
     border-radius: 10px;
-    margin: 0% 0% 10% 35%;
+    margin: 0% 0% 0% 35%;
 }
 
 #winPopup {
@@ -322,6 +322,14 @@ a {
     .board-game-container {
         margin: 0% 0% 10% 25%;
     }
+
+    /* Win message popup window */
+
+    #winPopContainer {
+        width: 50%;
+        height: 40%;
+        margin-left: 29%;
+    }
 }
 
 /* **** Media queries for iPad Air 820px **** */
@@ -388,6 +396,14 @@ a {
     .time-moves-count {
         margin: 0% 12% 5% 0%;
         font-size: 90%;
+    }
+
+    /* Win message popup window */
+
+    #winPopContainer {
+        width: 80%;
+        height: 40%;
+        margin-left: 10%;
     }
 
 }
