@@ -12,14 +12,12 @@ let initiateTimer = null;
 let startTimer;
 
 
-
 //Shuffle cards on window load
 function shuffle() {
     flipCards.forEach(flipCards => {
         let randmPosition = Math.floor(Math.random() * 16);
         flipCards.style.order = randmPosition;
     });
-
 }
 
 window.onload = function () {
@@ -29,14 +27,15 @@ window.onload = function () {
 // Start timer function
 function startTime() {
     startTimer = setInterval(function () {
-        seconds++;
+        timer.innerHTML = "Time" + "&nbsp" + minutes + ":" + seconds;
+        seconds += 1;
         if (seconds >= 60) {
-            minutes++;
+            minutes += 1;
             seconds = 0;
         }
-        timer.innerHTML = "Time" + "&nbsp" + minutes + ":" + seconds;
     }, 1000);
 }
+
 
 function stopTimer() {
     clearInterval(startTimer);
@@ -85,7 +84,6 @@ function activateMatch() {
 
 function revertCards() {
     stickBoard = true;
-
     setTimeout(() => {
         frstCard.classList.remove('flipping');
         scndCard.classList.remove('flipping');
@@ -109,7 +107,6 @@ function movesCount() {
     moves++;
     moveCount.innerText = moves;
 }
-
 
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 //flipCards.forEach(tile => tile.addEventListener('click', startTime));
