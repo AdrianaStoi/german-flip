@@ -5,8 +5,12 @@ let frstCard, scndCard; // variables for checking card match
 let flippedCard = false;
 let stickBoard = false;
 
-//shuffle cards on window load
+let timer = document.getElementById('time');
+let seconds = 0;
+let minutes = 0;
+let initiateTimer = null;
 
+//shuffle cards on window load
 function shuffle() {
     flipCards.forEach(flipCards => {
         let randmPosition = Math.floor(Math.random() * 16);
@@ -19,9 +23,28 @@ window.onload = function () {
     shuffle();
 };
 
+function startTime() {
+    let startTimer = setInterval(function () {
+        seconds++;
+        if (seconds >= 60) {
+            minutes++;
+            seconds = 0;
+        }
+        timer.innerHTML = "Time" + "&nbsp" + minutes + ":" + seconds;
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(startTimer);
+}
 
 // Function and click event for creating flip card 
 function createFlip() {
+
+    if (initiateTimer === null) {
+        startTime();
+        initiateTimer = true;
+    }
     if (stickBoard) return;
     if (this === frstCard) return;
 
@@ -72,8 +95,9 @@ function rebootBoard() {
     [frstCard, scndCard] = [null, null];
 }
 
-
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
+//flipCards.forEach(tile => tile.addEventListener('click', startTime));
+
 
 
 
