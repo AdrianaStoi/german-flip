@@ -102,7 +102,7 @@ ul li {
 }
 
 .game-btn:hover {
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #f4bc4f;
 }
 
@@ -219,6 +219,61 @@ a {
     padding: 9% 50%;
 }*/
 
+/* winning message popup window - hidden until game is over*/
+#winPopContainer {
+    /*display: none;*/
+    background-color: #f4bc4f;
+    width: 30%;
+    height: 40%;
+    position: relative;
+    z-index: 30;
+    border-radius: 10px;
+    margin: 0% 0% 10% 35%;
+}
+
+#winPopup {
+    width: 100%;
+    height: 80%;
+}
+
+#winImg img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-left: 0%;
+}
+
+#winText {
+    font-family: Yeseva One, sans-serif;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #272323;
+    /*margin-left: 25%;*/
+    margin-top: 2%;
+    padding: 0%;
+}
+
+#okBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#okBtn button {
+    width: 30%;
+    height: 30px;
+    margin-bottom: 5%;
+    background-color: #678CEC;
+    border: 1px solid #f4bc4f;
+    border-radius: 10px;
+    font-family: Yeseva One, sans-serif;
+    font-weight: bolder;
+    font-size: medium;
+}
 
 /* **** Media queries **** */
 
