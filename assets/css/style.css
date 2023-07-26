@@ -220,6 +220,19 @@ a {
 }*/
 
 /* winning message popup window - hidden until game is over*/
+
+#backgroundPop {
+    display: none;
+    position: fixed;
+    background-color: #272323;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
 #winPopContainer {
     display: none;
     background-color: #f4bc4f;
@@ -228,7 +241,7 @@ a {
     position: relative;
     z-index: 10;
     border-radius: 10px;
-    margin: 0% 0% 0% 35%;
+    margin: 10% 0% 0% 30%;
 }
 
 #winPopup {

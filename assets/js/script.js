@@ -14,10 +14,10 @@ let startTimer;
 let moveCount = document.getElementById("moves");
 let popupContainer = document.getElementById("winPopContainer");
 let popUp = document.getElementById("winPopup");
+let backgrPopContainer = document.getElementById("backgroundPop");
 let winTxt = document.getElementById("winText");
 let correctMatch = 0;
 let moves;
-
 
 //Shuffle cards on window load
 function shuffle() {
@@ -70,7 +70,6 @@ function createFlip() {
 //Event flip card on click
 flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 
-
 // function that checks match card 
 function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
@@ -110,7 +109,6 @@ function rebootBoard() {
     [frstCard, scndCard] = [null, null];
 }
 
-
 //Increase moves count 
 function movesCount() {
     moves = parseInt(moveCount.innerText);
@@ -125,14 +123,15 @@ function gameWin() {
         let endTime = timer.innerHTML;
         popupContainer.style.display = "block";
         popUp.style.display = "block";
-        winTxt.innerHTML = "You won with" + "&nbsp" + moves + "&nbsp" + "moves" + "&nbsp" + "in" + endTime + "!";
+        backgrPopContainer.style.display = "block";
+        winTxt.innerHTML = "You won with" + "&nbsp" + moves + "&nbsp" + "moves" + "&nbsp" + "in" + "&nbsp" + endTime + "!";
     };
 }
 
 let okayBtn = document.getElementById("okBtn");
 okayBtn.addEventListener("click", e => {
     popupContainer.style.display = "none";
-    popUp.style.display = "none";
+    backgrPopContainer.style.display = "none";
 });
 
 
