@@ -16,14 +16,13 @@ let popupContainer = document.getElementById("winPopContainer");
 let popUp = document.getElementById("winPopup");
 let winTxt = document.getElementById("winText");
 let correctMatch = 0;
+let moves;
+
 
 //Shuffle cards on window load
 function shuffle() {
-    flipCards.forEach(flipCards => {
-        let randmPosition = Math.floor(Math.random() * 16);
-        flipCards.style.order = randmPosition;
-    });
-}
+    flipCards.forEach(flipCards => flipCards.style.order = Math.floor(Math.random() * 16));
+};
 
 window.onload = function () {
     shuffle();
@@ -65,22 +64,26 @@ function createFlip() {
     }
 
     scndCard = this;
-    //flippedCard = false;
     matchCheck();
 }
+
+//Event flip card on click
+flipCards.forEach(tile => tile.addEventListener('click', createFlip));
+
 
 // function that checks match card 
 function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
+
     if (whenMatch) {
         activateMatch();
-        correctMatch += 1;
-    }
-    else {
+        correctMatch++;
+        movesCount();
+    } else {
         revertCards();
     }
-    if (correctMatch === 8) {
-        wnGame();
+    if (correctMatch == 8) {
+        gameWin();
     }
 }
 
@@ -107,25 +110,31 @@ function rebootBoard() {
     [frstCard, scndCard] = [null, null];
 }
 
+
 //Increase moves count 
 function movesCount() {
-    let moves = parseInt(moveCount.innerText);
+    moves = parseInt(moveCount.innerText);
     moves++;
     moveCount.innerText = moves;
 }
 
 //function win game and show win message
-function wnGame() {
-    if (correctMatch === 8) {
+function gameWin() {
+    if (correctMatch == 8) {
         stopTimer();
+        let endTime = timer.innerHTML;
         popupContainer.style.display = "block";
         popUp.style.display = "block";
-        winTxt.innerHTML = "You won with" + moveCount + "moves" + "in" + timer + "!";
+        winTxt.innerHTML = "You won with" + "&nbsp" + moves + "&nbsp" + "moves" + "&nbsp" + "in" + endTime + "!";
     };
 }
-//Event flip card on click
-flipCards.forEach(tile => tile.addEventListener('click', createFlip));
-//flipCards.forEach(tile => tile.addEventListener('click', startTime));
+
+let okayBtn = document.getElementById("okBtn");
+okayBtn.addEventListener("click", e => {
+    popupContainer.style.display = "none";
+    popUp.style.display = "none";
+});
+
 
 
 
