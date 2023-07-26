@@ -396,7 +396,8 @@ img {
         font-size: 80%;
     }
 
-    .game-btn {
+    .game-btn,
+    .reset-btn {
         padding: 2% 3%;
     }
 
@@ -444,7 +445,7 @@ img {
     }
 
     .board-game-container {
-        margin: 1% 0% 10% 25%;
+        margin: 1% 0% 20% 25%;
         grid-gap: 2%;
     }
 
@@ -459,6 +460,10 @@ img {
     .flip-cards {
         width: 80px;
         height: 80px;
+    }
+
+    .container-rst-btn {
+        margin-bottom: 13%;
     }
 }
 
@@ -492,9 +497,10 @@ img {
         font-size: 65%;
     }
 
-    .game-btn {
+    .game-btn,
+    .reset-btn {
         font-size: small;
-        padding: 3% 4%;
+        padding: 3% 5%;
     }
 
     /* Game Board page */
@@ -508,6 +514,8 @@ img {
         width: 90%;
         margin-left: 5%;
     }
+
+
 
     #winText {
         font-size: medium;
