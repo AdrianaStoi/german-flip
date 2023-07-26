@@ -179,39 +179,35 @@ img {
     overflow: hidden;
 }
 
-/* reset button and go to game rules button 
+/* reset button and go to game rules button */
 
 .container-rst-btn {
     display: flex;
     justify-content: center;
-    gap: 5%;
-    margin-right: 15%;
     padding: 0%;
 }
 
-.reset-btn,
-.game-rules-btn {
+.reset-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*flex-direction: row;*/
-/*    padding: 1% 2%;
+    padding: 1% 1%;
     margin-top: 0%;
     margin-bottom: 5%;
-    background: #f4bc4f;
+    background-color: #f4bc4f;
     border-radius: 10px;
     font-family: Yeseva One, sans-serif;
     font-weight: bolder;
     font-size: medium;
 }
 
-.reset-btn:hover,
-.game-rules-btn:hover {
-    background-color: white;
+.reset-btn:hover {
+    background-color: #ffffff;
     border: 1px solid #f4bc4f;
 }
 
-a {
+
+/*a {
     text-decoration: none;
 }
 
@@ -333,7 +329,7 @@ a {
     }
 
     .board-game-container {
-        margin: 0% 0% 10% 25%;
+        margin: 0% 0% 6% 25%;
     }
 
     /* Win message popup window */
@@ -506,5 +502,14 @@ a {
     .flip-cards {
         width: 65px;
         height: 70px;
+    }
+
+    #winPopContainer {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #winText {
+        font-size: medium;
     }
 }
