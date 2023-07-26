@@ -134,6 +134,16 @@ okayBtn.addEventListener("click", e => {
     backgrPopContainer.style.display = "none";
 });
 
+let resetGame = document.getElementById("reset");
+resetGame.addEventListener("click", e => {
+    let confirmNew = window.confirm("Do you want to start a new game?");
+    if (confirmNew) {
+        window.location.reload();
+    } else {
+    }
+});
+
+
 
 
 
