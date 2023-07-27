@@ -201,4 +201,4 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 * I tested performance, accessibility, best practice, and SEO using Lighthouse accessed via DevTools and here are the results:
 
-![Lighthouse screenshot]()https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestestinglighthouse_report_german_flipi.png
+![Lighthouse screenshot]()https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestestinglighthouse_report_german_flip.png
