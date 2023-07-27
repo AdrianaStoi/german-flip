@@ -129,7 +129,7 @@ function gameWin() {
 }
 
 let okayBtn = document.getElementById("okBtn");
-okayBtn.addEventListener("click", e => {
+okayBtn.addEventListener("click", function (e) {
     popupContainer.style.display = "none";
     backgrPopContainer.style.display = "none";
 });

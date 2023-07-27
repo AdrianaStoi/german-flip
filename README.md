@@ -191,8 +191,14 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
   
 * The layout, the features as buttons, game board, time count, move count are displayed correctly and are all working as expected. The game features are functioning as indended and flip cards are displayed properly.  
 
-| Browser       | Layout rendered as expected | Features and buttons work as expected | Images as expected |
+| Browser       | Layout rendered as expected | Features and buttons work as expected | Images on flip cards as expected |
 | ------------- | --------------------------- | -------------------- | ------------------ |
 | Google Chrome | Yes                         | Yes                  | Yes                |
 | Edge          | Yes                         | Yes                  | Yes                |
 | Mozilla       | Yes                         | Yes                  | Yes                |
+
+## Lighthouse
+
+* I tested performance, accessibility, best practice, and SEO using Lighthouse accessed via DevTools and here are the results:
+
+![Lighthouse screenshot]()https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestestinglighthouse_report_german_flipi.png
