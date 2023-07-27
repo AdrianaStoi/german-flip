@@ -67,3 +67,21 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 </ul>
 
  ![Image Go to Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/go_to_game_button.png)
+
+ ### Game Board page
+
+ #### Time count section
+
+ <ul>
+  <li>In this section, the user can find the timer which will start counting once he has clicked on the first card. </li>
+</ul>
+
+![time counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/time_counter.png)   ![time counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/time_counter_active.png)
+
+ #### Move count section
+
+<ul>
+  <li>•	Underneath the time counter, there is the Moves count. The Moves counter increases after each turn. One turn is counted when the user clicks on two cards.</li>
+</ul>
+
+![move counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter.png)   ![move counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter_active.png)
