@@ -11,7 +11,7 @@ Alongside trying to match the pairs, the players’ German vocabulary grows, and
 
 Visit live page [here](https://adrianastoi.github.io/german-flip/) 
 
-![Responsive]()
+![Responsive](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/i_am_responsive.png)
 
 
 ## External user’s goal:
@@ -35,3 +35,35 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
     <li>As a user, I would like to be able to reset the game. </li>
 </ul>
 
+## Features
+
+### Existing Features
+
+### Heading 
+
+<ul>
+  <li>The Game Rules page includes a heading at the top containing the logo image and the game title.  The logo image also serves as the front design of the flip cards. </li>
+   <li>This heading is used on both pages, the Game rules page, and the Game page.</li>
+</ul>
+
+![Heading logo image and game name](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/logo_game_name_heading.png)
+
+<ul>
+  <li> On the Game Rules page, the user can find the game description and the Game rules: </li>
+</ul>
+
+#### About Game
+![About Game](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/about_game_section.png)
+
+#### Game rules
+
+![Game rules](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/game_rules_section.png)
+
+
+#### Go to Game button
+
+<ul>
+  <li>At the bottom of the page under the Game rule, the user can find the “Go to Game” button. </li>
+</ul>
+
+ ![Image Go to Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/go_to_game_button.png)
