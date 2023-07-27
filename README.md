@@ -126,3 +126,33 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 * I used Balsamiq Wireframes to create the wireframes for game layout. The wireframe can be found [here - German-Flip: Memory Card Game with German Vocabulary](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/german_flip_memory_card_game_with_german_vocabulary.pdf)
 * I used the editor Codeanywhere for coding. Skillset used for the project were HTML, CSS and JavaScript.
 * The site was deployed to Github Pages, and deployment history was tracked and maintained through Git commit messages.
+
+## Testing
+
+### Testing Responsiveness
+
+* Chrome DevTools was used for testing responsiveness on desktop, tablets, and smartphones.
+
+* The page layout, images, game board, reset button and win message popup are all displayed correctly, as expected. The testing on various devices has ensured that the game functions properly and provides the desired user experience.
+
+* I tested on iPad Mini (768x1027) and Samsung Galaxy A51/71 (412x914).
+
+#### ipad Mini
+
+* The website displays a consistent layout when accessed on an Ipad Mini with a screen resolution of 768x1027, as detailed below:
+
+#### Game Rules page
+
+![Game Rules screenshot]()
+
+#### Board Game page
+
+![Board Game unflipped cards]()
+
+##### Board Game flipped cards
+
+![Board Game unflipped cards]()
+
+##### Board Game win message
+
+![Board Game win message]()
