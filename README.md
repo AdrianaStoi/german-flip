@@ -143,16 +143,36 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 #### Game Rules page
 
-![Game Rules screenshot]()
+![Game Rules page screenshot](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_rules_page_ipad_mini.png)
 
-#### Board Game page
+#### Game Board page
 
-![Board Game unflipped cards]()
+![Game Board unflipped cards](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_ipad_mini.png)
 
-##### Board Game flipped cards
+##### Game Board flipped cards
 
-![Board Game unflipped cards]()
+![Game Board flipped cards](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_active_ipad_mini.png) ![Board Game all cards flipped](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_flippedcards_ipad_mini.png)
 
-##### Board Game win message
+##### Game Board win message
 
-![Board Game win message]()
+![Game Board win message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_win_message_ipad_mini.png)
+
+#### Samsung Galaxy A51/71
+
+* I also tested the game on a Samsung Galaxy A51/71 with a screen resolution of 412x914, and the game rules, board game, win message are displayed correctly, as shown below:
+
+#### Game Rules page
+
+![Game Rules page screenshot](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_rules_page_samsung_galaxy_a.png)
+
+#### Game Board page
+
+![Game Board unflipped cards](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_samsung_galaxy_a.png)
+
+##### Game Board flipped cards
+
+![Game Board flipped cards](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_active_samsung_galaxy_a.png) ![Game Board all cards flipped](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_flippedcards_samsung_galaxy_a.png)
+
+##### Game Board win message
+
+![Game Board win message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_win_message_samsung_galaxy_a.png)
