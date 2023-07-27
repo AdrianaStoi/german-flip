@@ -81,7 +81,36 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
  #### Move count section
 
 <ul>
-  <li>•	Underneath the time counter, there is the Moves count. The Moves counter increases after each turn. One turn is counted when the user clicks on two cards.</li>
+  <li>Underneath the time counter, there is the Moves count. The Moves counter increases after each turn. One turn is counted when the user clicks on two cards.</li>
 </ul>
 
 ![move counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter.png)   ![move counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter_active.png)
+
+#### Game Board section  
+
+<ul>
+  <li>There are 16 cards which contain 8 pairs of images. Before starting the game, they are all turned back. The front image is the logo image. </li>
+  <li>The flip cards are themed around Breakfast food vocabulary.</li>
+</ul>
+
+![Image Game board with logo image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/board_game_unflipped.png)
+
+<ul>
+  <li>Each card contains an image of the food item, the corresponding German word for that item, and its associated noun article. Specific colors are associated to the noun genders (feminine - “die”, masculine - “der”, neuter - “das”) to help users in memorizing and easily remembering the gender of the noun. </li>
+</ul>
+
+![Image Game board with flipped cards that include image food items](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/flipped_cards.png)
+
+<ul>
+  <li>Once two cards are matched, they freeze. </li>
+</ul>
+
+![Two flipped cards]()
+
+<ul>
+  <li>When all 8 pairs are matched the users are prompted with a popup window with the message “You won with x moves in time x!</li>
+  <li>Under the message, there is the button “Ok!” which directs the user back to the game board page.</li>
+</ul>
+
+![Win message image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/win_message.png)
+
