@@ -158,5 +158,11 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
   <li>Sans Serif was used as alternative font.</li>
 </ul>
 
+## Technology
 
+<ul>
+  <li>I used Balsamiq Wireframes to create the wireframes for game layout. The wireframe can be found at : https://github.com/AdrianaStoi/german-flip/blob/main/documentation/german_flip_memory_card_game_with_german_vocabulary.pdf
+  <li>I used the editor Codeanywhere for coding. Skillset used for the project were HTML, CSS and JavaScript.</li>
+  <li>The site was deployed to Github Pages, and deployment history was tracked and maintained through Git commit messages.</li>
+</ul>
 
