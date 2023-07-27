@@ -137,7 +137,7 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 * I tested on iPad Mini (768x1027) and Samsung Galaxy A51/71 (412x914).
 
-#### ipad Mini
+### ipad Mini
 
 * The website displays a consistent layout when accessed on an Ipad Mini with a screen resolution of 768x1027, as detailed below:
 
@@ -157,7 +157,7 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 ![Game Board win message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_win_message_ipad_mini.png)
 
-#### Samsung Galaxy A51/71
+### Samsung Galaxy A51/71
 
 * I also tested the game on a Samsung Galaxy A51/71 with a screen resolution of 412x914, and the game rules, board game, win message are displayed correctly, as shown below:
 
@@ -176,3 +176,23 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 ##### Game Board win message
 
 ![Game Board win message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_win_message_samsung_galaxy_a.png)
+
+### Responsiveness on devices
+
+| Responsiveness                           | Desktop >1200px | Desktop 1024px | Devices >= 700 iPad Air/Mini, Surface Pro 7 | Devices <699 iPhone SE/ XR/12 Pro/X, Pixel, Samsung Galaxy S8+/ A51/71/Fold |
+| ---------------------------------------- | --------------- | -------------- | ------------------------------------------- | --------------------------------------------------------------------------- |
+| Links and buttons work                               | Yes             | Yes            | Yes                                         | Yes                                                                         |
+| Flip cards work                              | Yes             | Yes            | Yes                                         | Yes                                                                         |
+| Images, Layout and Content displayed as expected | Yes             | Yes            | Yes                                         | Yes                                                                         |
+
+## Browser Compatibility
+
+* I tested the site on different browsers Google Chrome, Edge and Mozilla.
+  
+* The layout, the features as buttons, game board, time count, move count are displayed correctly and are all working as expected. The game features are functioning as indended and flip cards are displayed properly.  
+
+| Browser       | Layout rendered as expected | Features and buttons work as expected | Images as expected |
+| ------------- | --------------------------- | -------------------- | ------------------ |
+| Google Chrome | Yes                         | Yes                  | Yes                |
+| Edge          | Yes                         | Yes                  | Yes                |
+| Mozilla       | Yes                         | Yes                  | Yes                |
