@@ -114,3 +114,19 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ![Win message image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/win_message.png)
 
+### Reset Game Button section  
+
+<ul>
+  <li> Under the gaming board, the user can find the "Reset Game" button. </li>
+</ul>
+
+![Image Reset Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_button.png)
+
+<ul>
+  <li>When the user clicks on the "Reset Game" button, he is prompted with a message:” Do you want to start a new game?”, and two options "Ok" or "Cancel" </li>
+  <li>When user clicks on “Ok.” The page is reloaded, and the game board is reset. Cards are shuffled, they are turned back, the time and moves counters are reset to 0. </li>
+  <li>When the user clicks on “Cancel”, he returns to the game page, and the game board will remain unchanged. This option is useful for users who accidentally click on the “Reset Game” button.</li>
+</ul>
+
+![Image Reset game pop-up message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_popup_message.png)
+
