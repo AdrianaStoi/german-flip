@@ -57,7 +57,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 #### Game rules
 
-![Game rules](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/game_rules_section.png)
+   ![Game rules](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/game_rules_section.png)
 
 
 #### Go to Game button
@@ -66,7 +66,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
   <li>At the bottom of the page under the Game rule, the user can find the “Go to Game” button. </li>
 </ul>
 
- ![Image Go to Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/go_to_game_button.png)
+    ![Image Go to Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/go_to_game_button.png)
 
  ### Game Board page
 
@@ -76,7 +76,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
   <li>In this section, the user can find the timer which will start counting once he has clicked on the first card. </li>
 </ul>
 
-![time counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/time_counter.png)   ![time counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/time_counter_active.png)
+   ![time counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/time_counter.png)   ![time counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/time_counter_active.png)
 
  #### Move count section
 
@@ -84,7 +84,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
   <li>Underneath the time counter, there is the Moves count. The Moves counter increases after each turn. One turn is counted when the user clicks on two cards.</li>
 </ul>
 
-![move counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter.png)   ![move counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter_active.png)
+   ![move counter before click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter.png)   ![move counter after click](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/moves_counter_active.png)
 
 #### Game Board section  
 
@@ -93,19 +93,19 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
   <li>The flip cards are themed around Breakfast food vocabulary.</li>
 </ul>
 
-![Image Game board with logo image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/board_game_unflipped.png)
+   ![Image Game board with logo image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/board_game_unflipped.png)
 
 <ul>
   <li>Each card contains an image of the food item, the corresponding German word for that item, and its associated noun article. Specific colors are associated to the noun genders (feminine - “die”, masculine - “der”, neuter - “das”) to help users in memorizing and easily remembering the gender of the noun. </li>
 </ul>
 
-![Image Game board with flipped cards that include image food items](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/flipped_cards.png)
+   ![Image Game board with flipped cards that include image food items](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/flipped_cards.png)
 
 <ul>
   <li>Once two cards are matched, they freeze. </li>
 </ul>
 
-![Two flipped cards]()
+   ![Two flipped cards](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/two_flipped_cards.png)
 
 <ul>
   <li>When all 8 pairs are matched the users are prompted with a popup window with the message “You won with x moves in time x!</li>
@@ -114,13 +114,13 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ![Win message image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/win_message.png)
 
-### Reset Game Button section  
+#### Reset Game Button section  
 
 <ul>
   <li> Under the gaming board, the user can find the "Reset Game" button. </li>
 </ul>
 
-![Image Reset Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_button.png)
+   ![Image Reset Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_button.png)
 
 <ul>
   <li>When the user clicks on the "Reset Game" button, he is prompted with a message:” Do you want to start a new game?”, and two options "Ok" or "Cancel" </li>
@@ -128,5 +128,35 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
   <li>When the user clicks on “Cancel”, he returns to the game page, and the game board will remain unchanged. This option is useful for users who accidentally click on the “Reset Game” button.</li>
 </ul>
 
-![Image Reset game pop-up message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_popup_message.png)
+   ![Image Reset game pop-up message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_popup_message.png)
+
+## Future Features
+
+<ul>
+    <li>Create Game Rules button on the board game page to allow users to display game rules and avoid going back to the previous page.</li>
+    <li>Add countdown timer and moves to game to make it more challenging for the player.</li>
+    <li>Different complexity level game in terms of number of available cards and vocabulary.</li>
+</ul>
+
+## Typography and color scheme
+
+### Color Scheme
+
+<ul>
+  <li>There where three colors used :</li>
+  <ul>
+    <li>Color used for background #678cec</li>
+    <li>Color used for text content: #272323</li>
+    <li>Color used for the background of the game  rules section, buttons and the border to the flip cards : #f4bc4f</li>
+  </ul>
+</ul>
+
+### Fonts
+
+<ul>
+  <li>Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and Josefin Sans for the paragraphs.</li>
+  <li>Sans Serif was used as alternative font.</li>
+</ul>
+
+
 
