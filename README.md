@@ -24,8 +24,9 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 ## User Stories
 
 * As a user, I would like to know the rules of the game.
+* As a user, I would like to easily navigate to the game page
+* As a user, I would like to view the time of completion for the game.
 * As a user, I would like to see the number of moves displayed on the game board page.
-* As a user, I would like to see the time . left for completing the game.
 * As a user, I would like to be able to reset the game.
 
 ## Features
@@ -201,4 +202,20 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 * I tested performance, accessibility, best practice, and SEO using Lighthouse accessed via DevTools and here are the results:
 
-![Lighthouse screenshot]()https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestestinglighthouse_report_german_flip.png
+![Lighthouse screenshot](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/lighthouse_report_german_flip.png)
+
+## Code Validation
+
+### HTML Validator
+
+* Run index.html through [W3C](https://validator.w3.org/nu/#l44c33) and received an error indicating that"button" element cannot appear as descendant of the "a" element.
+  
+* No errors or warnings in [W3C](https://validator.w3.org/nu/#l44c33) validator for gameboard.html file.
+
+### CSS Validator
+
+* The style.css file successfully passed through the [Jigsaw](https://jigsaw.w3.org/css-validator/validator) official validator without any errors being detected.
+
+### JavaScript Validator
+
+* No errors were found for script.js when pasing through the official [Jshin](https://jshint.com/) validator.

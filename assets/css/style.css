@@ -87,10 +87,11 @@ ul li {
 .container-btn {
     display: flex;
     justify-content: center;
-    text-decoration: none;
 }
 
 .game-btn {
+    text-decoration: none;
+    color: #272323;
     background: #f4bc4f;
     border-radius: 10px;
     padding: 1% 2%;

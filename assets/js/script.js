@@ -22,7 +22,7 @@ let moves;
 //Shuffle cards on window load
 function shuffle() {
     flipCards.forEach(flipCards => flipCards.style.order = Math.floor(Math.random() * 16));
-};
+}
 
 window.onload = function () {
     shuffle();
@@ -125,7 +125,7 @@ function gameWin() {
         popUp.style.display = "block";
         backgrPopContainer.style.display = "block";
         winTxt.innerHTML = "You won with" + "&nbsp" + moves + "&nbsp" + "moves" + "&nbsp" + "in" + "&nbsp" + endTime + "!";
-    };
+    }
 }
 
 let okayBtn = document.getElementById("okBtn");
