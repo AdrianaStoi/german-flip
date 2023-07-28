@@ -128,11 +128,19 @@ function gameWin() {
     }
 }
 
-let okayBtn = document.getElementById("okBtn");
-okayBtn.addEventListener("click", function (e) {
+/*let okayBtn = document.getElementById("okBtn");
+okayBtn.addEventListener("click", function() {
     popupContainer.style.display = "none";
     backgrPopContainer.style.display = "none";
-});
+});*/
+
+let okayBtn = document.getElementById("okBtn");
+okayBtn.addEventListener("click", clickOk);
+
+function clickOk() {
+    popupContainer.style.display = "none";
+    document.getElementById("backgroundPop").style.display = "none";
+}
 
 let resetGame = document.getElementById("reset");
 resetGame.addEventListener("click", e => {
