@@ -209,7 +209,11 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 ### HTML Validator
 
 * Run index.html through [W3C](https://validator.w3.org/nu/#l44c33) and received an error indicating that"button" element cannot appear as descendant of the "a" element.
-  
+
+  ![W3c index.html screenshot error](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/html_validator_error_index.png)
+
+* added a "div" tag for the "a" element and fixed the error, refer to [commit 73fa3bf](https://github.com/AdrianaStoi/german-flip/commit/73fa3bf258255495e332cd3973d6304abd2d8727)
+
 * No errors or warnings in [W3C](https://validator.w3.org/nu/#l44c33) validator for gameboard.html file.
 
 ### CSS Validator
@@ -219,3 +223,15 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 ### JavaScript Validator
 
 * No errors were found for script.js when pasing through the official [Jshin](https://jshint.com/) validator.
+
+## User Story Testing 
+
+|                User Story                            |                                            Testing                                                         |
+|------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+|As a user, I would like to know the rules of the game.| <ul><li>The game rules can be found on the main page. First section on the page gives a short description of the game and underneath this section, you can find the game rules.</li></ul>|
+| As a user I would like to easily navigate to the “Game” page. | <ul><li> You can find a “Go to Game” button beneath the game rules section. This button redirects to the game board page. </li></ul>|
+| As a user, I would like to see the time displayed in which I completed the game. | <ul><li> On the game board page, following the heading, you can find the time counter positioned on the right side.</li><li> The time begins when you click on the first card.</li><li>When all pairs are matched, the time count stops, and a popup window will appear displaying the final time.</li>|
+| As a user, I would like to see the number of moves displayed on the game board page.| <ul><li> On the game board page, under the time count section, you can find on the right side the moves counter.</li><li>The moves counter will start being counted when you click on the first two cards.</li><li>When all pairs are matched, the moves count stops. As you match all the pairs, the move count will stop, and a popup window will appear displaying the final move count.</li></ul>|
+| As a user, I would like to be able to reset the game. | <ul><li>You can start a new game by clicking on the “Reset Game” button.</li><li>When the button is clicked, there is a popup window displayed with the message “Do you want to start a new game?” and the options to either confirm or cancel the action.</ul></li>
+
+
