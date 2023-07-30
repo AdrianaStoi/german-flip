@@ -138,7 +138,7 @@ let okayBtn = document.getElementById("okBtn");
 okayBtn.addEventListener("click", clickOk);
 
 function clickOk() {
-    popupContainer.style.display = "none";
+    document.getElementById("winPopContainer").style.display = "none";
     document.getElementById("backgroundPop").style.display = "none";
 }
 
