@@ -265,6 +265,11 @@ img {
     padding: 0%;
 }
 
+#resetPopup p {
+    padding: 5% 0% 5% 8%;
+    margin-left: 0%;
+}
+
 #okBtn,
 #resetGame,
 #cancel {

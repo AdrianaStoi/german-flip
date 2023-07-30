@@ -128,28 +128,14 @@ function gameWin() {
     }
 }
 
-/*let okayBtn = document.getElementById("okBtn");
-okayBtn.addEventListener("click", function() {
-    popupContainer.style.display = "none";
-    backgrPopContainer.style.display = "none";
-});*/
-
-/*let okayBtn = document.getElementById("okBtn");
-okayBtn.addEventListener("click", clickOk);*/
-
 document.getElementById("okBtn").addEventListener("click", clickOk);
 
 function clickOk() {
-    /*document.getElementById("winPopContainer").classList.add("hide");
-    document.getElementById("backgroundPop").classList.add("hide");
-    document.getElementById("winPopup").classList.add("hide");
-    document.getElementById("backgroundPop").classList.add("hide");
-    document.getElementById("okBtn").classList.add("hide");*/
-
     document.getElementById("winPopContainer").style.display = "none";
     document.getElementById("backgroundPop").style.display = "none";
 }
 
+// displays reset game popup window
 function displayResetPopup() {
     popupContainer.style.display = "block";
     backgrPopContainer.style.display = "block";
@@ -167,7 +153,12 @@ document.getElementById("reset").addEventListener("click", displayResetPopup);
 document.getElementById("cancel").addEventListener("click", cancelResetGame);
 
 
+let newGame = document.getElementById("resetGame");
+function confirmReset() {
+    window.location.reload();
+}
 
+newGame.addEventListener("click", confirmReset);
 
 /*let resetGame = document.getElementById("reset");
 resetGame.addEventListener("click", e => {
