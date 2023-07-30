@@ -230,13 +230,15 @@ img {
 }*/
 
 #winPopContainer {
+    position: fixed;
     background-color: #f4bc4f;
     width: 30%;
     height: 40%;
-    position: relative;
+    /*position: relative;*/
     z-index: 10;
     border-radius: 10px;
-    margin: 10% 0% 0% 30%;
+    /*margin: 10% 0% 0% 30%;*/
+    margin: 0% 0% 0% 35%;
 }
 
 #winPopup {
@@ -260,7 +262,6 @@ img {
     justify-content: center;
     text-align: center;
     color: #272323;
-    /*margin-left: 25%;*/
     margin-top: 2%;
     padding: 0%;
 }
@@ -268,6 +269,7 @@ img {
 #resetPopup p {
     padding: 5% 0% 5% 8%;
     margin-left: 0%;
+    margin-top: 13%;
 }
 
 #okBtn,
@@ -347,6 +349,7 @@ img {
         width: 50%;
         height: 40%;
         margin-left: 29%;
+        position: relative;
     }
 }
 
@@ -370,6 +373,8 @@ img {
     .time-moves-count {
         margin: 0% 25% 2% 0%;
     }
+
+
 
 }
 
@@ -423,9 +428,10 @@ img {
         width: 80%;
         height: 40%;
         margin-left: 10%;
+        position: fixed;
     }
-
 }
+
 
 /* **** Media queries for iPhone XR, Facebook forAndroid v407 on Pixel 6, Samsung Galaxy S20 Ultra/ A51/71 414px **** */
 
@@ -460,6 +466,10 @@ img {
 
     .flip-cards {
         width: 90px;
+    }
+
+    #resetPopup p {
+        margin-top: 20%;
     }
 }
 
