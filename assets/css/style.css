@@ -180,7 +180,7 @@ img {
     overflow: hidden;
 }
 
-/* reset button and go to game rules button */
+/* reset button */
 
 .container-rst-btn {
     display: flex;
@@ -208,15 +208,8 @@ img {
 }
 
 
-/*a {
-    text-decoration: none;
-}
 
-.game-rules-btn {
-    padding: 9% 50%;
-}*/
-
-/* winning message popup window - hidden until game is over*/
+/* winning message popup window (hidden until game is over) and  reset popup window*/
 
 #backgroundPop {
     display: none;
@@ -228,6 +221,10 @@ img {
     z-index: 10;
     top: 0;
     left: 0;
+}
+
+.hide {
+    display: none;
 }
 
 #winPopContainer {
@@ -253,7 +250,8 @@ img {
     margin-left: 0%;
 }
 
-#winText {
+#winText,
+#resetPopup p {
     font-family: Yeseva One, sans-serif;
     font-size: large;
     display: flex;
@@ -266,14 +264,18 @@ img {
     padding: 0%;
 }
 
-#okBtn {
+#okBtn,
+#resetGame,
+#cancel {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%;
 }
 
-#okBtn button {
+#okBtn button,
+#resetGame button,
+#cancel button {
     width: 30%;
     height: 30px;
     margin-bottom: 5%;
