@@ -210,7 +210,7 @@ img {
 /* winning message popup window (hidden until game is over) and  reset popup window*/
 
 #backgroundPop {
-    display: none;
+    /*display: none;*/
     position: fixed;
     background-color: #272323;
     opacity: 0.9;
@@ -225,8 +225,11 @@ img {
     display: none;
 }
 
+/*.block-display {
+    display: block;
+}*/
+
 #winPopContainer {
-    display: none;
     background-color: #f4bc4f;
     width: 30%;
     height: 40%;
