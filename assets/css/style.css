@@ -207,8 +207,6 @@ img {
     border: 1px solid #f4bc4f;
 }
 
-
-
 /* winning message popup window (hidden until game is over) and  reset popup window*/
 
 #backgroundPop {
@@ -518,7 +516,8 @@ img {
         margin-left: 5%;
     }
 
-    #winText {
+    #winText,
+    #resetPopup p {
         font-size: medium;
     }
 }

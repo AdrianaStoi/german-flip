@@ -122,8 +122,10 @@ function gameWin() {
         stopTimer();
         let endTime = timer.innerHTML;
         popupContainer.style.display = "block";
-        popUp.style.display = "block";
-        backgrPopContainer.style.display = "block";
+        /*popUp.style.display = "block";
+        backgrPopContainer.style.display = "block";*/
+        document.getElementById("winPopup").classList.remove("hide");
+        document.getElementById("backgroundPop").classList.remove("hide");
         winTxt.innerHTML = "You won with" + "&nbsp" + moves + "&nbsp" + "moves" + "&nbsp" + "in" + "&nbsp" + endTime + "!";
     }
 }
@@ -134,22 +136,35 @@ okayBtn.addEventListener("click", function() {
     backgrPopContainer.style.display = "none";
 });*/
 
-let okayBtn = document.getElementById("okBtn");
-okayBtn.addEventListener("click", clickOk);
+/*let okayBtn = document.getElementById("okBtn");
+okayBtn.addEventListener("click", clickOk);*/
+
+document.getElementById("okBtn").addEventListener("click", clickOk);
 
 function clickOk() {
-    document.getElementById("winPopContainer").style.display = "none";
-    document.getElementById("backgroundPop").style.display = "none";
+    document.getElementById("winPopup").classList.add("hide");
+    document.getElementById("backgroundPop").classList.add("hide");
+
+    /*document.getElementById("winPopContainer").style.display = "none";
+    document.getElementById("backgroundPop").style.display = "none";*/
 }
 
-let resetGame = document.getElementById("reset");
+function displayResetPopup() {
+    popupContainer.style.display = "block";
+    backgrPopContainer.style.display = "block";
+    document.getElementById("okBtn").style.display = "none";
+    document.getElementById("resetPopup").classList.remove("hide");
+}
+
+document.getElementById("reset").addEventListener("click", displayResetPopup);
+/*let resetGame = document.getElementById("reset");
 resetGame.addEventListener("click", e => {
     let confirmNew = window.confirm("Do you want to start a new game?");
     if (confirmNew) {
         window.location.reload();
     } else {
     }
-});
+});*/
 
 
 
