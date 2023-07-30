@@ -1,23 +1,22 @@
 
 let flipCards = document.querySelectorAll('.flip-cards');
-
-let frstCard, scndCard; // variables for checking card match
-let flippedCard = false;
-let stickBoard = false;
-
 let timer = document.getElementById('time');
-let seconds = 0;
-let minutes = 0;
-let initiateTimer = null;
-let startTimer;
-
 let moveCount = document.getElementById("moves");
 let popupContainer = document.getElementById("winPopContainer");
-let popUp = document.getElementById("winPopup");
 let backgrPopContainer = document.getElementById("backgroundPop");
 let winTxt = document.getElementById("winText");
+let newGame = document.getElementById("resetGame");
+
+let frstCard = null;
+let scndCard = null;
+let initiateTimer = null;
+let startTimer = null;
+let flippedCard = false;
+let stickBoard = false;
+let seconds = 0;
+let minutes = 0;
 let correctMatch = 0;
-let moves;
+let moves = 0;
 
 //Shuffle cards on window load
 function shuffle() {
@@ -47,7 +46,7 @@ function stopTimer() {
 // Function and click event for creating flip card 
 function createFlip() {
 
-    //start timer on first card click
+    //Start timer on first card click
     if (initiateTimer === null) {
         startTime();
         initiateTimer = true;
@@ -67,10 +66,7 @@ function createFlip() {
     matchCheck();
 }
 
-//Event flip card on click
-flipCards.forEach(tile => tile.addEventListener('click', createFlip));
-
-// function that checks match card 
+// Function that checks match card 
 function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
 
@@ -116,7 +112,7 @@ function movesCount() {
     moveCount.innerText = moves;
 }
 
-//function win game and show win message
+//Function win game and show win message
 function gameWin() {
     if (correctMatch == 8) {
         stopTimer();
@@ -128,14 +124,13 @@ function gameWin() {
     }
 }
 
-document.getElementById("okBtn").addEventListener("click", clickOk);
-
+//Ok button within win popup window closes window
 function clickOk() {
     document.getElementById("winPopContainer").style.display = "none";
     document.getElementById("backgroundPop").style.display = "none";
 }
 
-// displays reset game popup window
+// Displays reset game popup window
 function displayResetPopup() {
     popupContainer.style.display = "block";
     backgrPopContainer.style.display = "block";
@@ -149,37 +144,16 @@ function cancelResetGame() {
     document.getElementById("backgroundPop").style.display = "none";
 }
 
-document.getElementById("reset").addEventListener("click", displayResetPopup);
-document.getElementById("cancel").addEventListener("click", cancelResetGame);
-
-
-let newGame = document.getElementById("resetGame");
+//Confirmation to reset game 
 function confirmReset() {
     window.location.reload();
 }
 
+//Event flip card on click
+flipCards.forEach(tile => tile.addEventListener('click', createFlip));
+
+//Events
+document.getElementById("okBtn").addEventListener("click", clickOk);
+document.getElementById("reset").addEventListener("click", displayResetPopup);
+document.getElementById("cancel").addEventListener("click", cancelResetGame);
 newGame.addEventListener("click", confirmReset);
-
-/*let resetGame = document.getElementById("reset");
-resetGame.addEventListener("click", e => {
-    let confirmNew = window.confirm("Do you want to start a new game?");
-    if (confirmNew) {
-        window.location.reload();
-    } else {
-    }
-});*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
