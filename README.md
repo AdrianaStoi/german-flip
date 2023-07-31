@@ -256,11 +256,11 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 * To arrange the game board into four columns, I used “display: grid” property. To ensure correct alignment of columns and rows, I used Google DevTool to experiment with appropriate values for the grid-template-columns and grid-template-columns properties. 
 
-![Layout game board not aligned]()
+![Layout game board not aligned](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/unfixed_layout_board_game.png)
 
 * For better responsiveness, especially when implementing media queries, I used the “repeat()” function and gave the values  4 and “auto”.  This approach allowed a more adaptable layout across different screen sizes than when using fixed units like “px”, “%”, “fr” for columns sizes.
 
-![Layout game board]()
+![Layout game board](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/fix_game_board.png)
 
 ###  Fixed Bugs - Media queries
 
@@ -268,8 +268,8 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 
 * When opening the board game page on iPhone SE, the board game section was occupying the entire space, leaving no room for anything else on the page. 
 
-![Flip cards size unfixed]()
+![Flip cards size unfixed](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/bug_responsiveness_flip_cards_iphone_se.png)
 
 * To address this issue, I adjusted the width and height of the flip cards to rectify the layout and ensure that there is sufficient space available. 
 
-![Flip cards size fixed]()
+![Flip cards size fixed](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/fix_responsiveness_flip_cards_iphone_se.png)
