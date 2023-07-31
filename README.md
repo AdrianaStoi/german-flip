@@ -249,3 +249,27 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 | As a user, I would like to view the time of completion for the game. | <ul><li> On the game board page, following the heading, you can find the time counter positioned on the right side.</li><li> The time begins when you click on the first card.</li><li>When all pairs are matched, the time count stops, and a popup window will appear displaying the final time.</li>|
 | As a user, I would like to see the number of moves displayed on the game board page.| <ul><li> On the game board page, under the time count section, you can find on the right side the moves counter.</li><li>The moves counter will start being counted when you click on the first two cards.</li><li>When all pairs are matched, the moves count stops. As you match all the pairs, the move count will stop, and a popup window will appear displaying the final move count.</li></ul>|
 | As a user, I would like to be able to reset the game. | <ul><li>You can start a new game by clicking on the “Reset Game” button.</li><li>When the button is clicked, there is a popup window displayed with the message “Do you want to start a new game?” and the options to either confirm or cancel the action.</ul></li>
+
+## Fixed Bugs 
+
+### Layout game board 
+
+* To arrange the game board into four columns, I used “display: grid” property. To ensure correct alignment of columns and rows, I used Google DevTool to experiment with appropriate values for the grid-template-columns and grid-template-columns properties. 
+
+![Layout game board not aligned]()
+
+* For better responsiveness, especially when implementing media queries, I used the “repeat()” function and gave the values  4 and “auto”.  This approach allowed a more adaptable layout across different screen sizes than when using fixed units like “px”, “%”, “fr” for columns sizes.
+
+![Layout game board]()
+
+###  Fixed Bugs - Media queries
+
+#### iPhone SE
+
+* When opening the board game page on iPhone SE, the board game section was occupying the entire space, leaving no room for anything else on the page. 
+
+![Flip cards size unfixed]()
+
+* To address this issue, I adjusted the width and height of the flip cards to rectify the layout and ensure that there is sufficient space available. 
+
+![Flip cards size fixed]()
