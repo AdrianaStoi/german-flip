@@ -23,14 +23,16 @@ function shuffle() {
     flipCards.forEach(flipCards => flipCards.style.order = Math.floor(Math.random() * 16));
 }
 
-window.onload = function () {
+/*window.onload = function () {
     shuffle();
-};
+};*/
+
+
 
 // Start timer function
 function startTime() {
     startTimer = setInterval(function () {
-        timer.innerHTML = "Time" + "&nbsp" + minutes + ":" + seconds;
+        timer.innerHTML = "Time" + "&nbsp" + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
         seconds += 1;
         if (seconds >= 60) {
             minutes += 1;
@@ -150,10 +152,24 @@ function confirmReset() {
 }
 
 //Event flip card on click
-flipCards.forEach(tile => tile.addEventListener('click', createFlip));
+/*flipCards.forEach(tile => tile.addEventListener('click', createFlip));
 
 //Events
 document.getElementById("okBtn").addEventListener("click", clickOk);
 document.getElementById("reset").addEventListener("click", displayResetPopup);
 document.getElementById("cancel").addEventListener("click", cancelResetGame);
-newGame.addEventListener("click", confirmReset);
+newGame.addEventListener("click", confirmReset);*/
+
+function initializeGame() {
+    shuffle();
+    //Event flip card on click
+    flipCards.forEach(tile => tile.addEventListener('click', createFlip));
+
+    //Events
+    document.getElementById("okBtn").addEventListener("click", clickOk);
+    document.getElementById("reset").addEventListener("click", displayResetPopup);
+    document.getElementById("cancel").addEventListener("click", cancelResetGame);
+    newGame.addEventListener("click", confirmReset);
+}
+
+addEventListener('DOMContentLoaded', initializeGame);

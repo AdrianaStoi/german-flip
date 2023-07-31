@@ -112,15 +112,15 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ### Color Scheme
 
-* There where three colors used :
+* There were three colors used :
   * Color used for background #678cec
   * Color used for text content: #272323
-  * Color used for the background of the game  rules section, buttons and the border to the flip cards : #f4bc4f
+  * Color used for the background of the game rules section, buttons and the the flip cards border : #f4bc4f
 
 ### Fonts
 
-Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and Josefin Sans for the paragraphs.
-  Sans Serif was used as alternative font.
+* Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and Josefin Sans for the paragraphs.
+* Sans Serif was used as alternative font.
 
 ## Technology
 
