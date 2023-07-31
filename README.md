@@ -86,7 +86,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
    ![Two flipped cards](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/two_flipped_cards.png)
 
 * When all 8 pairs are matched the users are prompted with a popup window with the message “You won with x moves in time x!
-* Under the message, there is the button “Ok!” which directs the user back to the game board page.
+* Under the message, there is the button “Ok” which directs the user back to the game board page.
 
 ![Win message image](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/win_message.png)
 
@@ -273,3 +273,24 @@ Regarding fonts, I used Google fonts Yeseva One for the heading and buttons, and
 * To address this issue, I adjusted the width and height of the flip cards to rectify the layout and ensure that there is sufficient space available. 
 
 ![Flip cards size fixed](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/fix_responsiveness_flip_cards_iphone_se.png)
+
+## Deployment
+
+* I maintained the commit history through Git commit messages and successfully deployed the site to GitHub pages. Here are the steps to deploy the site on Github:
+    * Go to the GitHub repository, navigate to the Settings tab
+    * Click on “Pages” available in the left-hand side
+    * Under the “Branch” section, click on “none” and select “main”, then click on “Save”
+    * Once the main branch is chosen, after a few minutes the website is live and the link to access it is displayed at the top of the page
+
+* Visit the site live at: https://adrianastoi.github.io/german-flip/
+
+## Credits 
+
+* Fonts were taken from [Google Fonts](https://fonts.google.com/?query=josefin)
+* I created the flip card function and implemented card matching and unmatching by following the tutorial of [Marina Ferreira here](https://marina-ferreira.github.io/tutorials/js/memory-game/). The tutorial served as a foundation and I adapted and customized it accordingly.
+
+## Media
+
+* Images for the flip cards were sourced for educational purposes from [Pinterest here](https://www.pinterest.de/pin/2181499813355508/)
+* Image front flip card was sourced for educational purposes from [Stock Adobe site here](https://stock.adobe.com/de/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&serie_id=242121808&search_page=1&search_type=see-more&get_facets=0&asset_id=242036288)
+* The image with message “Great Job” displayed in the win pop-up window was taken for education purposes from [Shutterstock site here](https://www.shutterstock.com/image-vector/word-great-job-on-comic-cloud-1955405428) 
