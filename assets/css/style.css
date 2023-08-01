@@ -39,7 +39,7 @@ h1 {
     font-size: 150%;
 }
 
-/* game rules section */
+/* Game rules section */
 .container-game-rules {
     display: flex;
     flex-direction: column;
@@ -82,8 +82,7 @@ ul li {
 }
 
 
-/* go to game button*/
-
+/* Go to game button */
 .container-btn {
     display: flex;
     justify-content: center;
@@ -114,8 +113,7 @@ ul li {
     margin-bottom: 0%;
 }
 
-/* style time and moves count section*/
-
+/* Style time and moves count section */
 .time-moves-count {
     display: flex;
     justify-content: flex-end;
@@ -127,8 +125,7 @@ ul li {
     list-style: none;
 }
 
-/* style for board game */
-
+/* Style for board game */
 .board-game-container {
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -180,8 +177,7 @@ img {
     overflow: hidden;
 }
 
-/* reset button */
-
+/* Reset button */
 .container-rst-btn {
     display: flex;
     justify-content: center;
@@ -207,10 +203,9 @@ img {
     border: 1px solid #f4bc4f;
 }
 
-/* winning message popup window (hidden until game is over) and  reset popup window*/
+/* Winning message popup window (hidden until game is over) and  reset popup window */
 
 #backgroundPop {
-    /*display: none;*/
     position: fixed;
     background-color: #272323;
     opacity: 0.9;
@@ -225,19 +220,13 @@ img {
     display: none;
 }
 
-/*.block-display {
-    display: block;
-}*/
-
 #winPopContainer {
-    position: fixed;
     background-color: #f4bc4f;
     width: 30%;
     height: 50%;
-    /*position: relative;*/
+    position: relative;
     z-index: 10;
     border-radius: 10px;
-    /*margin: 10% 0% 0% 30%;*/
     margin: 0% 0% 0% 35%;
 }
 
@@ -312,7 +301,6 @@ img {
     }
 
     /* Game rules section */
-
     .container-game-rules {
         width: 60%;
         margin: 0% 0% 5% 22%;
@@ -334,7 +322,6 @@ img {
     }
 
     /* Game Board page */
-
     .time-moves-count {
         margin: 0% 33% 2% 0%;
     }
@@ -344,16 +331,15 @@ img {
     }
 
     /* Win message popup window */
-
     #winPopContainer {
         width: 50%;
         height: 40%;
-        margin-left: 29%;
-        position: relative;
+        margin-left: 26%;
     }
 }
 
 /* **** Media queries for iPad Air 820px **** */
+
 @media screen and (max-width: 820px) {
 
     .img-logo {
@@ -379,8 +365,7 @@ img {
 
 @media screen and (max-width: 540px) {
 
-    /* heading */
-
+    /* Heading */
     .img-logo {
         width: 80%;
     }
@@ -390,7 +375,6 @@ img {
     }
 
     /* Game rules section */
-
     .container-game-rules {
         width: 90%;
     }
@@ -413,19 +397,16 @@ img {
     }
 
     /* Game Board page */
-
     .time-moves-count {
         margin: 0% 12% 5% 0%;
         font-size: 90%;
     }
 
     /* Win message popup window */
-
     #winPopContainer {
         width: 80%;
         height: 55%;
         margin-left: 10%;
-        position: fixed;
     }
 }
 
@@ -470,7 +451,8 @@ img {
     }
 
     #winText {
-        margin-top: 10%
+        margin-top: 10%;
+        margin-left: 4%;
     }
 
     #okBtn {
@@ -481,6 +463,8 @@ img {
 /* **** Media queries for iPhone SE 375px **** */
 
 @media screen and (max-width: 375px) {
+
+    /* Game board page */
     .flip-cards {
         width: 80px;
         height: 80px;
@@ -533,7 +517,6 @@ img {
     }
 
     /* Game Board page */
-
     .flip-cards {
         width: 65px;
         height: 70px;

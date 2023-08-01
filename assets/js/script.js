@@ -18,16 +18,10 @@ let minutes = 0;
 let correctMatch = 0;
 let moves = 0;
 
-//Shuffle cards on window load
+//Shuffle cards function
 function shuffle() {
     flipCards.forEach(flipCards => flipCards.style.order = Math.floor(Math.random() * 16));
 }
-
-/*window.onload = function () {
-    shuffle();
-};*/
-
-
 
 // Start timer function
 function startTime() {
@@ -95,7 +89,6 @@ function revertCards() {
     setTimeout(() => {
         frstCard.classList.remove('flipping');
         scndCard.classList.remove('flipping');
-        //stickBoard = false;
         rebootBoard();
     }, 900);
     movesCount();
@@ -150,15 +143,6 @@ function cancelResetGame() {
 function confirmReset() {
     window.location.reload();
 }
-
-//Event flip card on click
-/*flipCards.forEach(tile => tile.addEventListener('click', createFlip));
-
-//Events
-document.getElementById("okBtn").addEventListener("click", clickOk);
-document.getElementById("reset").addEventListener("click", displayResetPopup);
-document.getElementById("cancel").addEventListener("click", cancelResetGame);
-newGame.addEventListener("click", confirmReset);*/
 
 function initializeGame() {
     shuffle();

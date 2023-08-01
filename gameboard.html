@@ -19,11 +19,13 @@
         <h1>German-Flip: Memory Card Game with German Vocabulary</h1>
     </div>
 
+    <!--time and moves count section-->
     <ul class="time-moves-count">
         <li id="time">Time 00:00</li>
         <li> Moves count: <span id="moves">00</span></li>
     </ul>
 
+    <!--win pop-up window hidden until the game is won-->
     <div id="backgroundPop" class="hide"></div>
     <div id="winPopContainer" class="hide">
         <div id="winPopup" class="hide">
@@ -32,12 +34,14 @@
             <div id="okBtn"><button>Ok</button></div>
         </div>
 
+        <!--reset pop-up window displayed when user clicks on "Reset Game" button-->
         <div id="resetPopup" class="hide">
             <p>Do you want to start a new game?</p>
             <div id="resetGame"><button>Confirm</button></div>
             <div id="cancel"><button>Cancel</button></div>
         </div>
     </div>
+
     <!--game board section-->
     <div class="board-game-container">
         <div class="flip-cards" data-imagecard="das_brot">
