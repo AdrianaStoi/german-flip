@@ -251,14 +251,12 @@ img {
     justify-content: center;
     text-align: center;
     color: #272323;
-    margin-top: 2%;
+    margin: 2% 0% 0% 0%;
     padding: 0%;
 }
 
 #resetPopup p {
-    padding: 5% 0% 5% 8%;
-    margin-left: 0%;
-    margin-top: 25%;
+    padding: 5% 0%;
 }
 
 #okBtn,
@@ -404,9 +402,9 @@ img {
 
     /* Win message popup window */
     #winPopContainer {
-        width: 80%;
+        width: 85%;
         height: 55%;
-        margin-left: 10%;
+        margin-left: 8%;
     }
 }
 
@@ -446,13 +444,8 @@ img {
         width: 90px;
     }
 
-    #resetPopup p {
-        margin-top: 40%;
-    }
-
     #winText {
         margin-top: 10%;
-        margin-left: 4%;
     }
 
     #okBtn {
@@ -476,7 +469,6 @@ img {
 
     #winPopContainer {
         height: 65%;
-        position: relative;
     }
 }
 

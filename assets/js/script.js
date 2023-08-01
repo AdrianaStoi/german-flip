@@ -7,8 +7,8 @@ let backgrPopContainer = document.getElementById("backgroundPop");
 let winTxt = document.getElementById("winText");
 let newGame = document.getElementById("resetGame");
 
-let frstCard = null;
-let scndCard = null;
+let cardOne = null;
+let cardTwo = null;
 let initiateTimer = null;
 let startTimer = null;
 let flippedCard = false;
@@ -56,27 +56,27 @@ function createFlip() {
         initiateTimer = true;
     }
     if (stickBoard) return;
-    if (this === frstCard) return;
+    if (this === cardOne) return;
 
     this.classList.add('flipping');
 
     if (!flippedCard) {
         flippedCard = true;
-        frstCard = this;
+        cardOne = this;
         return;
     }
 
-    scndCard = this;
+    cardTwo = this;
     matchCheck();
 }
 
 /**
  * Function that checks match card by checking dataset property
- * For creating this function, I used the tutorial below and customized accordingly:
+ * For this function, activateMatch and revertCards, I used the tutorial below and customized accordingly:
  * https://marina-ferreira.github.io/tutorials/js/memory-game/ 
  */
 function matchCheck() {
-    let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
+    let whenMatch = cardOne.dataset.imagecard === cardTwo.dataset.imagecard;
 
     if (whenMatch) {
         activateMatch();
@@ -94,8 +94,8 @@ function matchCheck() {
  * Function that detaches the event listeners on both cards
  */
 function activateMatch() {
-    frstCard.removeEventListener('click', createFlip);
-    scndCard.removeEventListener('click', createFlip);
+    cardOne.removeEventListener('click', createFlip);
+    cardTwo.removeEventListener('click', createFlip);
     rebootBoard();
 }
 
@@ -105,19 +105,19 @@ function activateMatch() {
 function revertCards() {
     stickBoard = true;
     setTimeout(() => {
-        frstCard.classList.remove('flipping');
-        scndCard.classList.remove('flipping');
+        cardOne.classList.remove('flipping');
+        cardTwo.classList.remove('flipping');
         rebootBoard();
     }, 900);
     movesCount();
 }
 
 /**
- * Reset frstcard and scndCard variables after each round
+ * Reset cardOne and cardTwo variables after each round
  */
 function rebootBoard() {
     [flippedCard, stickBoard] = [false, false];
-    [frstCard, scndCard] = [null, null];
+    [cardOne, cardTwo] = [null, null];
 }
 
 /**
