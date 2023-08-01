@@ -18,12 +18,16 @@ let minutes = 0;
 let correctMatch = 0;
 let moves = 0;
 
-//Shuffle cards function
+/**
+ * Shuffle cards function
+ */
 function shuffle() {
     flipCards.forEach(flipCards => flipCards.style.order = Math.floor(Math.random() * 16));
 }
 
-// Start timer function
+/**
+ *  Start timer function which displays seconds and minutes
+ */
 function startTime() {
     startTimer = setInterval(function () {
         timer.innerHTML = "Time" + "&nbsp" + minutes.toString().padStart(2, '0') + ":" + seconds.toString().padStart(2, '0');
@@ -39,7 +43,11 @@ function stopTimer() {
     clearInterval(startTimer);
 }
 
-// Function and click event for creating flip card 
+/**
+ * Function and click event for creating flip card   
+ * For creating this function I used the tutorial below and customized accordingly:
+ *  https://marina-ferreira.github.io/tutorials/js/memory-game/
+ */
 function createFlip() {
 
     //Start timer on first card click
@@ -62,7 +70,11 @@ function createFlip() {
     matchCheck();
 }
 
-// Function that checks match card 
+/**
+ * Function that checks match card by checking dataset property
+ * For creating this function, I used the tutorial below and customized accordingly:
+ * https://marina-ferreira.github.io/tutorials/js/memory-game/ 
+ */
 function matchCheck() {
     let whenMatch = frstCard.dataset.imagecard === scndCard.dataset.imagecard;
 
@@ -78,12 +90,18 @@ function matchCheck() {
     }
 }
 
+/**
+ * Function that detaches the event listeners on both cards
+ */
 function activateMatch() {
     frstCard.removeEventListener('click', createFlip);
     scndCard.removeEventListener('click', createFlip);
     rebootBoard();
 }
 
+/**
+ * Function that turn back the cards by 900ms timeout that removes the class "flipping"
+ */
 function revertCards() {
     stickBoard = true;
     setTimeout(() => {
@@ -94,20 +112,27 @@ function revertCards() {
     movesCount();
 }
 
-//Reset frstcard and scndCard variables after each round
+/**
+ * Reset frstcard and scndCard variables after each round
+ */
 function rebootBoard() {
     [flippedCard, stickBoard] = [false, false];
     [frstCard, scndCard] = [null, null];
 }
 
-//Increase moves count 
+/**
+ * Increase moves count 
+ */
 function movesCount() {
     moves = parseInt(moveCount.innerText);
     moves++;
     moveCount.innerText = moves;
 }
 
-//Function win game and show win message
+/**
+ * Function in case of win game if variable correctMatch is 8 
+ * If condition is met the win message is displayed by removing "hide" class
+ */
 function gameWin() {
     if (correctMatch == 8) {
         stopTimer();
@@ -119,13 +144,19 @@ function gameWin() {
     }
 }
 
-//Ok button within win popup window closes window
+/**
+ * Function for "Ok" button within win popup window
+ * On click, it closes window by adding property "display: none" to winPopcontainer and backgroundPop
+ */
 function clickOk() {
     document.getElementById("winPopContainer").style.display = "none";
     document.getElementById("backgroundPop").style.display = "none";
 }
 
-// Displays reset game popup window
+/**
+* Function that displays reset game popup window 
+* On click, it adds property "display: block" to winPopcontainer and backgroundPop
+*/
 function displayResetPopup() {
     popupContainer.style.display = "block";
     backgrPopContainer.style.display = "block";
@@ -133,17 +164,25 @@ function displayResetPopup() {
     document.getElementById("resetPopup").classList.remove("hide");
 }
 
+/**
+ * Function that closes pop-up window
+ */
 function cancelResetGame() {
     document.getElementById("resetPopup").classList.add("hide");
     document.getElementById("winPopContainer").style.display = "none";
     document.getElementById("backgroundPop").style.display = "none";
 }
 
-//Confirmation to reset game 
+/**
+ * Function that resets game by window reload
+ */
 function confirmReset() {
     window.location.reload();
 }
 
+/**
+ * Function for DOMContentLoaded event
+ */
 function initializeGame() {
     shuffle();
     //Event flip card on click
