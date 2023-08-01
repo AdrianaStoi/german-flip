@@ -27,6 +27,8 @@ function shuffle() {
 
 /**
  *  Start timer function which displays seconds and minutes
+ * Source : https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/ 
+ * Code was adapted and customized
  */
 function startTime() {
     startTimer = setInterval(function () {
@@ -100,7 +102,7 @@ function activateMatch() {
 }
 
 /**
- * Function that turn back the cards by 900ms timeout that removes the class "flipping"
+ * Function that turns back the cards by 900ms timeout that removes the class "flipping"
  */
 function revertCards() {
     stickBoard = true;
