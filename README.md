@@ -96,8 +96,8 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
    ![Image Reset Game button](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_button.png)
 
-* When the user clicks on the "Reset Game" button, he is prompted with a message:” Do you want to start a new game?”, and two options "Ok" or "Cancel"
-* When user clicks on “Ok.” The page is reloaded, and the game board is reset. Cards are shuffled, they are turned back, the time and moves counters are reset to 0.
+* When the user clicks on the "Reset Game" button, he is prompted with a message:” Do you want to start a new game?”, and two options "Confirm" or "Cancel"
+* When user clicks on “Confirm” The page is reloaded, and the game board is reset. Cards are shuffled, they are turned back, the time and moves counters are reset to 0.
 * When the user clicks on “Cancel”, he returns to the game page, and the game board will remain unchanged. This option is useful for users who accidentally click on the “Reset Game” button.
 
    ![Image Reset game pop-up message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagesreadme/reset_game_popup_message.png)
@@ -158,6 +158,10 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ![Game Board win message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_win_message_ipad_mini.png)
 
+##### Game Board reset message
+
+![Game Board reset message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/reset_game_ipad_mini.png)
+
 ### Samsung Galaxy A51/71
 
 * I also tested the game on a Samsung Galaxy A51/71 with a screen resolution of 412x914, and the game rules, board game, win message are displayed correctly, as shown below:
@@ -177,6 +181,10 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 ##### Game Board win message
 
 ![Game Board win message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/game_board_win_message_samsung_galaxy_a.png)
+
+##### Game Board reset message
+
+![Game Board reset message](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/reset_game_message_samsung_galaxy_a.png)
 
 ### Responsiveness on devices
 
