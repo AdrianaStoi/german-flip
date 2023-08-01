@@ -276,11 +276,27 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ## Deployment
 
+### Codeanywhere
+
+* I used Codenywhere to create and run the project. Here are the steps to create the workspace and run the project:
+  * Log in to Codeanywhere using GitHub account: https://app.codeanywhere.com 
+  * On the Dashboard, click on “New Workspace” which can be found under “Workspaces” section.
+  * Copy and paste the Repository URL created in GitHub (by using the Code Institute template) into the designated field.
+  * Click on Create. 
+  * New Workspace is created in Codeanywhere. 
+  * To run and view the project written in Codeanywhere, click on “Terminal” in the upper bar, then select “New Terminal”.
+  * The New terminal will open at the bottom part of the page. To run the application, type “python3 -m http.server” in the terminal. 
+  * A button “Open Preview or Open Browser” will appear in the right-hand corner.
+  * To open it in Browser, click on Open Browser.
+  * Application/project will run in a new Tab within the Browser.
+
+### GitHub
+
 * I maintained the commit history through Git commit messages and successfully deployed the site to GitHub pages. Here are the steps to deploy the site on Github:
-    * Go to the GitHub repository, navigate to the Settings tab
-    * Click on “Pages” available in the left-hand side
-    * Under the “Branch” section, click on “none” and select “main”, then click on “Save”
-    * Once the main branch is chosen, after a few minutes the website is live and the link to access it is displayed at the top of the page
+  * Go to the GitHub repository, navigate to the Settings tab
+  * Click on “Pages” available in the left-hand side
+  * Under the “Branch” section, click on “none” and select “main”, then click on “Save”
+  * Once the main branch is chosen, after a few minutes the website is live and the link to access it is displayed at the top of the page
 
 * Visit the site live at: https://adrianastoi.github.io/german-flip/
 
