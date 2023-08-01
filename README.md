@@ -240,7 +240,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 | Cancel button in reset pop-up window | Upon clicking, the user should be brought back to the board game without any modifications to the ongoing game. The game should remain unchanged, and the user should be able to continue playing from where they left off. | Click  | Upon clicking, the user is brought back to the board game without any modifications to the ongoing game. The game remains unchanged, and the user can continue playing from where they left off.                  |
 | Win pop-up window    | When the game is completed, and all 8 pairs are successfully matched, a pop-up window should appear displaying the message “You won with x moves in time x!” along with an “Ok” button. Upon clicking the” Ok” button, the user should be taken back to the board game without any changes to the game state. | Pop-up window should appear only when all 8 pairs are matched | When the game is completed, and all 8 pairs are successfully matched, the pop-up window appears displaying the message “You won with x moves in time x!” along with an “Ok” button. Upon clicking the” Ok” button, the user is taken back to the board game without any changes to the game state. |
 
-## User Story Testing 
+## User Story Testing
 
 |                User Story                            |                                            Testing                                                         |
 |------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -250,11 +250,11 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 | As a user, I would like to see the number of moves displayed on the game board page.| <ul><li> On the game board page, under the time count section, you can find on the right side the moves counter.</li><li>The moves counter will start being counted when you click on the first two cards.</li><li>When all pairs are matched, the moves count stops. As you match all the pairs, the move count will stop, and a popup window will appear displaying the final move count.</li></ul>|
 | As a user, I would like to be able to reset the game. | <ul><li>You can start a new game by clicking on the “Reset Game” button.</li><li>When the button is clicked, there is a popup window displayed with the message “Do you want to start a new game?” and the options to either confirm or cancel the action.</ul></li>
 
-## Fixed Bugs 
+## Fixed Bugs
 
-### Layout game board 
+### Layout game board
 
-* To arrange the game board into four columns, I used “display: grid” property. To ensure correct alignment of columns and rows, I used Google DevTool to experiment with appropriate values for the grid-template-columns and grid-template-rows properties. 
+* To arrange the game board into four columns, I used “display: grid” property. To ensure correct alignment of columns and rows, I used Google DevTool to experiment with appropriate values for the grid-template-columns and grid-template-rows properties.
 
 ![Layout game board not aligned](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/unfixed_layout_board_game.png)
 
@@ -262,7 +262,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ![Layout game board](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/fix_game_board.png)
 
-###  Fixed Bugs - Media queries
+### Fixed Bugs - Media queries
 
 #### iPhone SE
 
@@ -306,7 +306,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 * Fonts were taken from [Google Fonts](https://fonts.google.com/?query=josefin)
 * Grid creation values for creating the game board were taken from [CSS-tricks site](https://css-tricks.com/almanac/properties/g/grid-auto-columns/) specifically code for the use of "repeat()" function with values 4 and "auto" for grid-templates-columns and grid-templates-row.
 * I created the flip card function and implemented card matching and unmatching by following the tutorial of [Marina Ferreira here](https://marina-ferreira.github.io/tutorials/js/memory-game/). The tutorial served as a foundation and I adapted and customized it accordingly.
-* For the time start function I used as source and inspiration [Moira Hartigan - Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) which was changed and customized.
+* For the start timer function I used as source and inspiration [Moira Hartigan - Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) which was changed and customized.
 
 ## Media
 
@@ -316,4 +316,4 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ## Acknowledgements
 
-* My Mentor for continuous helpful feedback.
+* My Mentor Rohit Sharma for continuous helpful feedback.
