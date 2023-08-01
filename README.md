@@ -254,7 +254,7 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 ### Layout game board 
 
-* To arrange the game board into four columns, I used “display: grid” property. To ensure correct alignment of columns and rows, I used Google DevTool to experiment with appropriate values for the grid-template-columns and grid-template-columns properties. 
+* To arrange the game board into four columns, I used “display: grid” property. To ensure correct alignment of columns and rows, I used Google DevTool to experiment with appropriate values for the grid-template-columns and grid-template-rows properties. 
 
 ![Layout game board not aligned](https://github.com/AdrianaStoi/german-flip/blob/main/documentation/imagestesting/unfixed_layout_board_game.png)
 
@@ -279,16 +279,16 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 ### Codeanywhere
 
 * I used Codenywhere to create and run the project. Here are the steps to create the workspace and run the project:
-  * Log in to Codeanywhere using GitHub account: https://app.codeanywhere.com 
+  * Log in to Codeanywhere using GitHub account: https://app.codeanywhere.com/
   * On the Dashboard, click on “New Workspace” which can be found under “Workspaces” section.
   * Copy and paste the Repository URL created in GitHub (by using the Code Institute template) into the designated field.
-  * Click on Create. 
-  * New Workspace is created in Codeanywhere. 
+  * Click on Create.
+  * New Workspace is created in Codeanywhere.
   * To run and view the project written in Codeanywhere, click on “Terminal” in the upper bar, then select “New Terminal”.
-  * The New terminal will open at the bottom part of the page. To run the application, type “python3 -m http.server” in the terminal. 
+  * The New terminal will open at the bottom part of the page. To run the application, type “python3 -m http.server” in the terminal.
   * A button “Open Preview or Open Browser” will appear in the right-hand corner.
   * To open it in Browser, click on Open Browser.
-  * Application/project will run in a new Tab within the Browser.
+  * Application/project will run in a new Tab within the browser.
 
 ### GitHub
 
@@ -300,13 +300,20 @@ Visit live page [here](https://adrianastoi.github.io/german-flip/)
 
 * Visit the site live at: https://adrianastoi.github.io/german-flip/
 
-## Credits 
+## Credits
 
+* Font Pairing suggestion were taken from Page Cloud - [Best Font pairings](https://www.pagecloud.com/blog/best-google-fonts-pairings)
 * Fonts were taken from [Google Fonts](https://fonts.google.com/?query=josefin)
+* Grid creation values for creating the game board were taken from [CSS-tricks site](https://css-tricks.com/almanac/properties/g/grid-auto-columns/) specifically code for the use of "repeat()" function with values 4 and "auto" for grid-templates-columns and grid-templates-row.
 * I created the flip card function and implemented card matching and unmatching by following the tutorial of [Marina Ferreira here](https://marina-ferreira.github.io/tutorials/js/memory-game/). The tutorial served as a foundation and I adapted and customized it accordingly.
+* For the time start function I used as source and inspiration [Moira Hartigan - Alien Memory Game](https://moirahartigan.github.io/Portfolio-2---Alien-Memory-Game/) which was changed and customized.
 
 ## Media
 
 * Images for the flip cards were sourced for educational purposes from [Pinterest here](https://www.pinterest.de/pin/2181499813355508/)
 * Image front flip card was sourced for educational purposes from [Stock Adobe site here](https://stock.adobe.com/de/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Binclude_stock_enterprise%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&filters%5Bcontent_type%3Aimage%5D=1&order=relevance&safe_search=1&serie_id=242121808&search_page=1&search_type=see-more&get_facets=0&asset_id=242036288)
-* The image with message “Great Job” displayed in the win pop-up window was taken for education purposes from [Shutterstock site here](https://www.shutterstock.com/image-vector/word-great-job-on-comic-cloud-1955405428) 
+* The image with message “Great Job” displayed in the win pop-up window was taken for education purposes from [Shutterstock site here](https://www.shutterstock.com/image-vector/word-great-job-on-comic-cloud-1955405428)
+
+## Acknowledgements
+
+* My Mentor for continuous helpful feedback.
