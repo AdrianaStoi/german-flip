@@ -9,7 +9,7 @@
 
 body {
     background: #678CEC;
-    font-family: Josefin Sans, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     font-size: 130%;
     color: #272323;
@@ -35,7 +35,7 @@ body {
 h1 {
     display: flex;
     align-items: center;
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     font-size: 150%;
 }
 
@@ -56,7 +56,7 @@ h3,
 .p-game-rules {
     display: flex;
     align-items: flex-start;
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     margin: 2% 2% 2% 3%;
     padding-bottom: 1%;
     padding-top: 1%;
@@ -96,7 +96,7 @@ ul li {
     padding: 1% 2%;
     margin-top: 0%;
     margin-bottom: 10%;
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     font-weight: bolder;
     font-size: medium;
 }
@@ -119,7 +119,7 @@ ul li {
     justify-content: flex-end;
     align-items: flex-end;
     margin: 0% 38% 2% 0%;
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     font-weight: bolder;
     font-size: large;
     list-style: none;
@@ -196,7 +196,7 @@ img {
     margin-bottom: 5%;
     background-color: #f4bc4f;
     border-radius: 10px;
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     font-weight: bolder;
     font-size: medium;
 }
@@ -247,7 +247,7 @@ img {
 
 #winText,
 #resetPopup p {
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     font-size: large;
     display: flex;
     align-items: center;
@@ -280,7 +280,7 @@ img {
     background-color: #678CEC;
     border: 1px solid #f4bc4f;
     border-radius: 10px;
-    font-family: Yeseva One, sans-serif;
+    font-family: 'Yeseva One', sans-serif;
     font-weight: bolder;
     font-size: medium;
     color: #272323;
