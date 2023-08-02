@@ -118,7 +118,7 @@ ul li {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin: 0% 38% 2% 0%;
+    margin: 0% 37% 2% 0%;
     font-family: 'Yeseva One', sans-serif;
     font-weight: bolder;
     font-size: large;
@@ -326,7 +326,7 @@ img {
 
     /* Game Board page */
     .time-moves-count {
-        margin: 0% 33% 2% 0%;
+        margin: 0% 29% 2% 0%;
     }
 
     .board-game-container {
